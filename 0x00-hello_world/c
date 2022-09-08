@@ -1,0 +1,6 @@
+
+========== main.c ==========
+main.c:6: ERROR: trailing whitespace
+main.c:13: WARNING: please, no spaces at the start of a line
+total: 1 errors, 1 warnings, 15 lines checked
+main
