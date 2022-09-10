@@ -10,7 +10,6 @@
 int main(void)
 {
 	int i, p;
-
 	for (i = 0; i < 100; i++)
 	{
 		for (p = 0; p < 100; j++)
@@ -25,7 +24,6 @@ int main(void)
 				if (i != 98)
 				{
 					putchar(',');
-
 					putchar(' ');
 				}
 			}
