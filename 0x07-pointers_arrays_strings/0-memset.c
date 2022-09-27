@@ -2,20 +2,24 @@
 
 
 /**
- * _memset - Fills a memory block with a constant byte
- * @s: A pointer to the memory area to be filled.
- * @b: The char to be used 
- * @n: number of bytes to be used
- * 
- * Return: pointer to the memory block
+ *_strcat - concatenates  the string pointed to by @src to
+ * the end of the string pointed to by @dest
+ *@dest: String that will be appended
+ *@src: String to be concatenated upon
+ *
+ * Return: returns poiner to @dest
  */
 
-char *_memset(char *s, char b, unisigned int n) 
+char *_strcat(char *dest, char *src) 
 {
-	while (n)
-	{
-		s[n - 1] = b;
-		n--;
-	}
-	return (s);
+	
+	int index = 0, dest_len = 0;
+	
+	while (dest[index++])
+		dest_len++;
+
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+
+	return (dest);
 }
